@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e4dd8bd9-c2ea-48e4-9aeb-e430a8c4c937" name="naz" url="http://nshahrad.scweb.ca ">
+        <fileTransfer rootFolder="/home/nshahrad" accessType="SFTP" host="php.scweb.ca" port="22" sshConfigId="97aa8800-18a5-4df4-8d40-0391fa9582b9" sshConfig="nshahrad@php.scweb.ca:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

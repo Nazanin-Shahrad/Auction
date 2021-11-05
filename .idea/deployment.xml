@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="naz" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="naz">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/auction" local="$PROJECT_DIR$" web="http://nshahrad.scweb.ca " />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
