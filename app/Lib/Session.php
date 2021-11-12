@@ -6,13 +6,16 @@ use PDOException;
 use SessionHandlerInterface;
 
 class Session implements SessionHandlerInterface{
-
+    private $user;
     private  static $dbConnection;
 
     public function __construct()
     {
         session_set_save_handler($this, true);
         session_start();
+        if(isset ($_SESSION['user'])){
+            $this->user = $_SESSION['user'];
+        }
 
     }
     public function __destructor(){
@@ -105,7 +108,26 @@ class Session implements SessionHandlerInterface{
     }
 
 
+    /*public function isLoggedIn(){
+        return $this->user;
+    }
 
+    public function getUser() {
+        return $this->user;
+
+    }
+    public function login(User $userObj): bool {
+        $this->user = $userObj;
+        $_SESSION['user'] = $userObj;
+        return true;
+    }
+    public function logout(): bool {
+        $this->user = false;
+        $_SESSION = [];
+        session_destroy();
+        return true;
+    }
+    */
 }
 
 
